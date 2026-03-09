@@ -570,6 +570,10 @@ h3 {
     background-color: #31D0AA;
 }
 
+.close-svg {
+    fill: currentColor;
+}
+
 .email-footer {
     background-color: transparent;
     border: 1px solid #FFFFFF;
@@ -623,8 +627,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: ;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -694,7 +698,9 @@ h3 {
 
 .modal-input-svg {
     color: #2E2F42;
+    fill: currentColor;
     position: absolute;
+    padding: 6px 3px;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
@@ -716,7 +722,7 @@ h3 {
 .lbl-input {
     width: 100%;
     height: 40px;
-    padding-left: 35px;
+    padding-left: 38px;
     background-color: transparent;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
@@ -733,9 +739,8 @@ h3 {
 }
 
 .modal-lbl-txt {
-    font: inherit;
     font-size: 12px;
-    line-height: 1.67;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8E8F99;
 }
@@ -842,4 +847,5 @@ h3 {
 
 .check-svg {
     color: #FCFCFC;
+    fill: currentColor;
 }
