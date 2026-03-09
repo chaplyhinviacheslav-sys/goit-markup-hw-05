@@ -509,16 +509,92 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    gap: 120px;
 }
 
 .find-us-text {
     font-weight: 500;
     margin-bottom: 16px;
     color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .page-footer .ico-link:hover,
 .page-footer .ico-link:focus {
     background-color: #31D0AA;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-items: flex-end;
+}
+
+.subs-txt {
+    font-family: inherit;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+.subs-btn {
+    background-color: #4D5AE5;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    border: none;
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.subs-btn-svg {
+    fill: #FFFFFF;
+}
+
+.email-footer {
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: 264px;
+    height: 40px;
+    color: #FFFFFF;
+}
+
+.email-footer::placeholder {
+    color: #FFFFFF;
+}
+
+.subscribe-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo-text {
+    margin-right: 120px;
+}
+
+.find-us {
+    margin-right: 80px;
 }
