@@ -620,8 +620,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  pointer-events: ;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -661,6 +661,16 @@ h3 {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
+    transition: 
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover {
+    background-color: #404BBF;
+    border-color: transparent;
+    color: #FFFFFF;
 }
 
 .close-modal {
@@ -680,12 +690,17 @@ h3 {
 }
 
 .modal-input-svg {
-    --color3: #2E2F42;
+    color: #2E2F42;
     position: absolute;
     left: 16px;
     top: 50%;
     transform: translateY(-50%);
     pointer-events: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lbl-input:focus + .modal-input-svg {
+    color: #4D5AE5;
 }
 
 .modal-lbl {
@@ -703,6 +718,14 @@ h3 {
     border-radius: 4px;
     padding-top: 8px;
     padding-bottom: 8px;
+    outline: none;
+    transition: 
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lbl-input:hover,
+.lbl-input:focus {
+    border-color: #4D5AE5;
 }
 
 .modal-lbl-txt {
@@ -722,6 +745,11 @@ h3 {
     color: #FFFFFF;
     align-self: center;
     min-width: 169px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover {
+    background-color: #404BBF;
 }
 
 .btn-submit p {
@@ -765,6 +793,12 @@ h3 {
     border: 1px solid rgba(46, 47, 66, 0.4);
     background-color: transparent;
     resize: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.comment-txt:focus {
+    outline: none;
+    border-color: #4D5AE5;
 }
 
 .comment-txt::placeholder {
@@ -774,4 +808,31 @@ h3 {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
+}
+
+.custom-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 2px;
+    fill: transparent;
+    flex-shrink: 0;
+    transition: 
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.visually-hidden:checked + .custom-checkbox {
+    background-color: #404BBF;
+    border-color: #404BBF;
+    color: #F4F4FD;
+}
+
+.check-svg {
+    color: #FCFCFC;
 }

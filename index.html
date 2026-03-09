@@ -448,6 +448,7 @@
           </div>
         </div>
       </footer>
+      <!--modal section-->
       <div class="modal-overlay">
         <div class="modal">
           <div class="close-modal">
@@ -496,17 +497,20 @@
               </label>
             </div>
 
-            <div class="policy-sec">
-              <input type="checkbox" name="agreement" value="im_accept_policy" />
-
-              <span class="policy-txt">
-                I accept the terms and conditions of the <a class="policy-link" href="" target="_blank"> Privacy Policy</a>
+            <label class="policy-sec">
+              <input class="visually-hidden" type="checkbox" name="agreement" value="im_accept_policy" />
+              <span class="custom-checkbox">
+                <svg class="check-svg" width="10" height="8">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
               </span>
-            </div>
+              <span class="policy-txt">
+                I accept the terms and conditions of the
+                <a class="policy-link" href="" target="_blank">Privacy Policy</a>
+              </span>
+            </label>
 
-            <button class="btn-submit" type="submit">
-              <p>Send</p>
-            </button>
+            <button class="btn-submit" type="submit">Send</button>
 
           </form>
         </div>
