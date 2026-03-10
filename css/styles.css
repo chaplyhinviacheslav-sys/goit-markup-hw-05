@@ -535,12 +535,13 @@ h3 {
 }
 
 .subs-txt {
-    font-family: inherit;
     font-weight: 500;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    text-align: left;
 }
 
 .subs-btn {
@@ -598,14 +599,8 @@ h3 {
 .subscribe-me {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form-label {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+    align-items: flex-start;
+    margin-left: auto;
 }
 
 .footer-logo-text {
@@ -831,7 +826,6 @@ h3 {
     cursor: pointer;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 2px;
-    fill: transparent;
     flex-shrink: 0;
     transition: 
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -839,13 +833,16 @@ h3 {
         fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.visually-hidden:checked + .custom-checkbox .check-svg {
+    opacity: 1;
+}
+
 .visually-hidden:checked + .custom-checkbox {
     background-color: #404BBF;
-    border-color: #404BBF;
     color: #F4F4FD;
+    border-color: #404BBF;
 }
 
 .check-svg {
-    color: #FCFCFC;
-    fill: currentColor;
+    opacity: 0;
 }
