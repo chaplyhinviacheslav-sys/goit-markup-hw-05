@@ -576,6 +576,11 @@ h3 {
 }
 
 .email-footer {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 4px;
@@ -627,8 +632,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0;
-  pointer-events: none;
+  opacity: 1;
+  pointer-events: ;
   transition: opacity 250ms ease-in-out;
 }
 
@@ -852,4 +857,5 @@ h3 {
 
 .check-svg {
     opacity: 0;
+    fill: currentColor
 }
