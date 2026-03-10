@@ -632,8 +632,8 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 1;
-  pointer-events: ;
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 250ms ease-in-out;
 }
 
